@@ -53,7 +53,7 @@ class Storage {
 
     // Get an item key at specified index (same as native Storage object).
     public static key(index: number): string {
-        var result = null;
+        var result: string = null;
         if(Storage.keys[index] != null) {
           result = Storage.keys[index];
         }

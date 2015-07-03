@@ -10,6 +10,8 @@ gulp.task('default', function() {
 	return gulp.src('FakeStorage.ts')
 	.pipe(tsc({
 		noImplicitAny: true,
+		target: 'es5',
+		module: 'commonjs'
 	}))
 	.pipe(gulp.dest('.'))
 });

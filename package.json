@@ -4,7 +4,7 @@
   "description": "Simulates the browser's Storage object.",
   "main": "FakeStorage.js",
   "scripts": {
-  	"build": "gulp",
+    "build": "gulp",
     "test": "echo //TODO"
   },
   "keywords": [
@@ -14,5 +14,11 @@
     "fake"
   ],
   "author": "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-typescript": "^2.7.8",
+    "mocha": "^2.2.5",
+    "should": "^7.0.1"
+  }
 }
