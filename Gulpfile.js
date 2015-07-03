@@ -3,18 +3,15 @@
 */
 
 var gulp = require('gulp'),
-	  fs = require('fs'),
-	 tsc = require('gulp-typescript'),
-  concat = require('gulp-concat');
+      fs = require('fs'),
+     tsc = require('gulp-typescript');
 
 gulp.task('default', function() {
 	return gulp.src('FakeStorage.ts')
 	.pipe(tsc({
-		noImplicitAny: true
+		noImplicitAny: true,
 	}))
 	.pipe(gulp.dest('.'))
-	.pipe(concat('fakestorage.js'))
-	.pipe(gulp.dest('.'));
 });
 
 gulp.task('clean', function() {
