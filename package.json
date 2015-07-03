@@ -1,0 +1,18 @@
+{
+  "name": "fake-storage",
+  "version": "1.0.0",
+  "description": "Simulates the browser's Storage object.",
+  "main": "FakeStorage.js",
+  "scripts": {
+  	"build": "gulp",
+    "test": "echo //TODO"
+  },
+  "keywords": [
+    "storage",
+    "object",
+    "browser",
+    "fake"
+  ],
+  "author": "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>",
+  "license": "MIT"
+}
