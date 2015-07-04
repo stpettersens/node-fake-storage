@@ -1,5 +1,5 @@
 {
-  "name": "fake-storage",
+  "name": "ssp-fake-storage",
   "version": "1.0.0",
   "description": "Simulates the browser's Storage object.",
   "main": "FakeStorage.js",
@@ -16,8 +16,8 @@
   "author": "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-typescript": "^2.7.8",
+    "gulp": "~3.9.0",
+    "gulp-typescript": "~2.7.8",
     "mocha": "^2.2.5",
     "should": "^7.0.1"
   }
