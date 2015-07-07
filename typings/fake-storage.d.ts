@@ -5,7 +5,7 @@
 
 declare module "fake-storage" {
 	// count property - TODO
-	export function setItem(key: string, value: string): void;
+	export function setItem(key: string, value: any): number;
 	export function getItem(key: string): string;
 	export function removeItem(key: string): void;
 	export function clear(): void;

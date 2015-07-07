@@ -20,16 +20,26 @@ class Storage {
     }
 
     // Set an item (same as native Storage object).
-    public static setItem(key: string, value: string): void {
-        Storage.keys.push(key);
-        Storage.vals.push(value);
+    public static setItem(key: string, value: any): number {
+        var index: number = Storage.keys.indexOf(key);
+        if(index != -1) {
+            // Update (overwrite) existing:
+            Storage.vals[index] = value.toString();
+        }
+        else {
+            // Create new:
+            index = Storage.keys.length;
+            Storage.keys.push(key);
+            Storage.vals.push(value.toString());
+        }
+        return index; // Return index for created/updated item.
     }
 
     // Get an item (value at key; same as native Storage object).
     public static getItem(key: string): string {
         var index: number = Storage.keys.indexOf(key);
         var result: string = null;
-        if(Storage.keys.indexOf(key) != -1) {
+        if(index != -1) {
             result = Storage.vals[index];
         }
         return result;
@@ -37,7 +47,6 @@ class Storage {
 
     // Remove an item (same as native Storage object).
     public static removeItem(key: string): void {
-        console.log(Storage.getItems());
         var index: number = Storage.keys.indexOf(key);
         if(Storage.keys.indexOf(key) != -1) {
             Storage.keys.splice(index, 1);

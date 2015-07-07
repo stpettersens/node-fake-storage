@@ -1,11 +1,11 @@
 {
   "name": "ssp-fake-storage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simulates the browser's Storage object.",
   "main": "FakeStorage.js",
   "scripts": {
     "build": "gulp",
-    "test": "echo //TODO"
+    "test": "node node_modules/mocha/bin/mocha FakeStorage.test.js"
   },
   "keywords": [
     "storage",

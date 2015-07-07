@@ -10,13 +10,12 @@ gulp.task('default', function() {
 	return gulp.src('FakeStorage.ts')
 	.pipe(tsc({
 		noImplicitAny: true,
-		target: 'es5',
-		module: 'commonjs'
+		module: 'commonjs',
+		target: 'es5'
 	}))
 	.pipe(gulp.dest('.'))
 });
 
 gulp.task('clean', function() {
-	fs.unlinkSync('cart.js');
-	fs.unlinkSync('cart.min.js');
+	fs.unlinkSync('FakeStorage.js');
 });
