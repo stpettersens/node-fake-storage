@@ -1,9 +1,9 @@
-// Type definitions for fake-storage
+// Type definitions for ssp-fake-storage
 // Project: https://github.com/stpettersens/node-fake-storage
 // Definitions by: Sam Saint-Pettersen <https://github.com/stpettersens>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
 
-declare module "fake-storage" {
+declare module "ssp-fake-storage" {
 	// count property - TODO
 	export function setItem(key: string, value: any): number;
 	export function getItem(key: string): string;
