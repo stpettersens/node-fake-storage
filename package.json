@@ -1,6 +1,6 @@
 {
   "name": "ssp-fake-storage",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simulates the browser's Storage object.",
   "main": "FakeStorage.js",
   "scripts": {
@@ -20,5 +20,12 @@
     "gulp-typescript": "~2.7.8",
     "mocha": "^2.2.5",
     "should": "^7.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/stpettersens/node-fake-storage"
+  },
+  "bugs": {
+    "url": "https://github.com/stpettersens/node-fake-storage/issues"
   }
 }
